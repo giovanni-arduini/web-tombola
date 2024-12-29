@@ -1,5 +1,7 @@
+import style from "./Number.module.css";
+
 function Number(n) {
-  return <p>{n.n}</p>;
+  return <p className={style.body}>{n.n}</p>;
 }
 
 export default Number;
