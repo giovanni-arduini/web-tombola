@@ -23,6 +23,10 @@ ol {
   margin: 0 auto;
 }
 
+.body {
+  display: flex;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
