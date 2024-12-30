@@ -5,8 +5,7 @@ import { useContext } from "react";
 import NumberContext from "../NumberContext";
 
 function Table() {
-  const numbers = useContext(NumberContext);
-  console.log(numbers);
+  const { numbers } = useContext(NumberContext);
   return (
     <div className="container">
       <ul className="row">

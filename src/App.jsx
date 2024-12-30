@@ -8,8 +8,37 @@ import Body from "./Body/Body";
 const numbers = new Array(90).fill(0).map((_, index) => index);
 
 function App() {
+  const [remainingNumbers, setRemainingNumbers] = useState(numbers);
+  const [extractedNumbers, setExtractedNumbers] = useState([]);
+  const [lastExtracted, setLastExtracted] = useState();
+
+  function extractNumber(a) {
+    const i = Math.floor(Math.random() * a.length);
+    const newNumber = remainingNumbers[i];
+    setLastExtracted(newNumber);
+    console.log(lastExtracted);
+    setExtractedNumbers((extractNumbers) => [...extractNumbers, newNumber]);
+    setRemainingNumbers((remainingNumbers) =>
+      remainingNumbers.filter((_, index) => index !== i)
+    );
+    console.log(extractedNumbers);
+    console.log(remainingNumbers);
+  }
+
+  const handleSumbit = (event) => {
+    extractNumber(remainingNumbers);
+    event.preventDefault();
+  };
+
   return (
-    <NumberContext.Provider value={numbers}>
+    <NumberContext.Provider
+      value={{
+        numbers,
+        extractNumber,
+        extractedNumbers,
+        handleSumbit,
+      }}
+    >
       <>
         <Header />
         <Body />
