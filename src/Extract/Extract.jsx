@@ -7,7 +7,7 @@ function Extract() {
 
   return (
     <form onSubmit={handleSumbit}>
-      <button className={style.btn}>Estrai!</button>;
+      <button className={style.btn}>Estrai!</button>
     </form>
   );
 }

@@ -15,12 +15,14 @@ function App() {
   function extractNumber(a) {
     const i = Math.floor(Math.random() * a.length);
     const newNumber = remainingNumbers[i];
+
     setLastExtracted(newNumber);
     console.log(lastExtracted);
     setExtractedNumbers((extractNumbers) => [...extractNumbers, newNumber]);
     setRemainingNumbers((remainingNumbers) =>
       remainingNumbers.filter((_, index) => index !== i)
     );
+
     console.log(extractedNumbers);
     console.log(remainingNumbers);
   }
@@ -37,6 +39,7 @@ function App() {
         extractNumber,
         extractedNumbers,
         handleSumbit,
+        lastExtracted,
       }}
     >
       <>
