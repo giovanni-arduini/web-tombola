@@ -44,3 +44,17 @@ ol {
 .col {
   width: calc(100% / 10);
 }
+
+.breakline {
+  width: 3px;
+  background-color: black;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  border-style: none;
+  box-shadow: 1px 1px 1px black;
+}

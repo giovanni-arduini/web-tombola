@@ -1,5 +1,7 @@
+import style from "./EndGame.module.css";
+
 function EndGame() {
-  return <button>End Game</button>;
+  return <button className={style.btn}>End Game</button>;
 }
 
 export default EndGame;

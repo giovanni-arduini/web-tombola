@@ -1,5 +1,7 @@
+import style from "./Extract.module.css";
+
 function Extract() {
-  return <div>Extract number</div>;
+  return <button className={style.btn}>Estrai!</button>;
 }
 
 export default Extract;

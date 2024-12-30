@@ -1,0 +1,11 @@
+.title {
+  margin-bottom: 1rem;
+  font-size: medium;
+  text-align: center;
+}
+
+.body {
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
