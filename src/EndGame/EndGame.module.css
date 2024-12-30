@@ -2,3 +2,6 @@
   background-color: blueviolet;
   color: white;
 }
+.btn:hover {
+  background-color: rgb(88, 42, 131);
+}
